@@ -1,0 +1,90 @@
+/* Breadcrumb */
+.breadcrumb {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li+li:before{
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+#horror-books {
+    font-weight: 600;
+}
+
+/* Images */
+.large-image {
+    display: inline-block;
+    padding: 5rem;
+    padding-left: 20rem;
+}
+
+.large-image img {
+    width: 30rem;
+}
+
+.small-images {
+    display: inline-block;
+}
+
+.small-images img {
+    padding: 35px 0;
+    width: 7rem;
+}
+
+.small-images ul {
+    list-style-type: none;
+}
+
+/* Pricing and Order */
+.book-price ul li {
+    display: inline;
+    /* float: right; */
+    padding-bottom: 10px;
+}
+
+.book-price h2 {
+    top: 10px;
+    text-align: center;
+    float: right; 
+    padding-bottom: 800px;
+}
+
+.book-description p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 10rem;
+}
+
+@media screen and (max-width: 960px) {
+    main {
+      display: flex;          
+    }
+    .large-image {
+      width: 50%;
+    }
+    .small-images ul li {
+        display: inline;
+        margin: 50px;
+        /* width: 50%; */
+    }
+    .small-images li {
+        text-align: center;
+    }
+}
+
